@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Порівняння безкоштовних PM-інструментів для IT (травень 2026)</title>
+    <title>Порівняння PM-інструментів для IT (травень 2026)</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: var(--font-sans); }
@@ -29,8 +29,8 @@
         .cross { color: #A32D2D; font-size: 15px; }
         .part { color: #BA7517; font-size: 13px; }
         .feat-item { font-size: 12px; display: flex; gap: 4px; align-items: center; color: var(--color-text-secondary); }
-        .hidden { display: none; }
         .price { font-size: 13px; font-weight: 500; color: #3C3489; }
+        .hidden { display: none; }
     </style>
 </head>
 <body>
@@ -51,10 +51,10 @@
   <table id="pm-table">
     <colgroup>
       <col style="width:135px">
+      <col style="width:130px">
       <col style="width:95px">
-      <col style="width:95px">
-      <col style="width:125px">
-      <col style="width:165px">
+      <col style="width:120px">
+      <col style="width:155px">
       <col style="width:135px">
     </colgroup>
     <thead>
@@ -63,7 +63,7 @@
         <th>Безкоштовний план</th>
         <th>Платний від</th>
         <th>Підходить для</th>
-        <th>Ключові обмеження (free)</th>
+        <th>Ключові обмеження</th>
         <th>Особливості</th>
       </tr>
     </thead>
@@ -74,13 +74,17 @@
           <div class="tool-sub">linear.app</div>
           <div style="margin-top:6px"><span class="badge b-tag">Agile</span> <span class="badge b-tag">Kanban</span></div>
         </td>
-        <td><span class="badge b-free">✓ Є</span></td>
+        <td>
+          <span class="badge b-free">✓ Є</span>
+          <div class="limit-item">необмежено учасників</div>
+          <div class="limit-item">250 issues + 2 teams</div>
+        </td>
         <td class="price">~$10–16 / user / mo</td>
         <td style="font-size:12px; color:var(--color-text-secondary);">Стартапи, IT-команди, розробники</td>
         <td>
-          <div class="limit-item">250 issues + 2 teams</div>
           <div class="limit-item">10 MB на файл</div>
           <div class="limit-item">Без Insights та пріоритизації</div>
+          <div class="limit-item">Без guest access</div>
         </td>
         <td>
           <div class="feat-item"><span class="check">✓</span> Git-інтеграція</div>
@@ -96,18 +100,22 @@
           <div class="tool-sub">notion.so</div>
           <div style="margin-top:6px"><span class="badge b-tag">Docs</span> <span class="badge b-tag">Kanban</span></div>
         </td>
-        <td><span class="badge b-free">✓ Є</span></td>
+        <td>
+          <span class="badge b-free">✓ Є</span>
+          <div class="limit-item">1 workspace</div>
+          <div class="limit-item">до 10 гостей</div>
+          <div class="limit-item">~1000 блоків (командно)</div>
+        </td>
         <td class="price">~$10 / user / mo</td>
-        <td style="font-size:12px; color:var(--color-text-secondary);">Документація, бази знань, невеликі команди</td>
+        <td style="font-size:12px; color:var(--color-text-secondary);">Документація, бази знань</td>
         <td>
           <div class="limit-item">5 MB на файл</div>
           <div class="limit-item">7 днів історії версій</div>
-          <div class="limit-item">~1000 блоків при командній роботі</div>
         </td>
         <td>
           <div class="feat-item"><span class="check">✓</span> БД + wiki</div>
           <div class="feat-item"><span class="check">✓</span> AI-функції</div>
-          <div class="feat-item"><span class="part">~</span> Kanban / список</div>
+          <div class="feat-item"><span class="part">~</span> Kanban</div>
           <div class="feat-item"><span class="cross">✗</span> Без Gantt</div>
         </td>
       </tr>
@@ -118,13 +126,16 @@
           <div class="tool-sub">atlassian.com</div>
           <div style="margin-top:6px"><span class="badge b-tag">Scrum</span> <span class="badge b-tag">Agile</span></div>
         </td>
-        <td><span class="badge b-limit">~ Обмежено</span></td>
+        <td>
+          <span class="badge b-limit">~ Обмежено</span>
+          <div class="limit-item">до 10 користувачів</div>
+          <div class="limit-item">2 GB сховища</div>
+        </td>
         <td class="price">~$8–15 / user / mo</td>
         <td style="font-size:12px; color:var(--color-text-secondary);">IT-команди, scrum-команди</td>
         <td>
-          <div class="limit-item">До 10 користувачів</div>
-          <div class="limit-item">2 GB сховища</div>
           <div class="limit-item">Обмежена автоматизація</div>
+          <div class="limit-item">Без розширеної звітності</div>
         </td>
         <td>
           <div class="feat-item"><span class="check">✓</span> Scrum / Kanban boards</div>
@@ -139,13 +150,17 @@
           <div class="tool-sub">trello.com</div>
           <div style="margin-top:6px"><span class="badge b-tag">Kanban</span></div>
         </td>
-        <td><span class="badge b-free">✓ Є</span></td>
-        <td class="price">~$5 / user / mo</td>
-        <td style="font-size:12px; color:var(--color-text-secondary);">Прості проєкти, особисте використання</td>
         <td>
-          <div class="limit-item">10 дошок на workspace</div>
+          <span class="badge b-free">✓ Є</span>
+          <div class="limit-item">необмежено карток</div>
+          <div class="limit-item">10 дошок</div>
           <div class="limit-item">10 collaborators</div>
+        </td>
+        <td class="price">~$5 / user / mo</td>
+        <td style="font-size:12px; color:var(--color-text-secondary);">Прості проєкти</td>
+        <td>
           <div class="limit-item">10 MB на файл</div>
+          <div class="limit-item">1 Power-Up на дошку</div>
         </td>
         <td>
           <div class="feat-item"><span class="check">✓</span> Drag & drop</div>
@@ -160,13 +175,16 @@
           <div class="tool-sub">clickup.com</div>
           <div style="margin-top:6px"><span class="badge b-tag">Agile</span> <span class="badge b-tag">Docs</span></div>
         </td>
-        <td><span class="badge b-free">✓ Є</span></td>
+        <td>
+          <span class="badge b-free">✓ Є</span>
+          <div class="limit-item">необмежено завдань</div>
+          <div class="limit-item">необмежено користувачів</div>
+        </td>
         <td class="price">~$7 / user / mo</td>
         <td style="font-size:12px; color:var(--color-text-secondary);">Команди будь-якого розміру</td>
         <td>
           <div class="limit-item">60 MB сховища</div>
           <div class="limit-item">Обмежений Gantt</div>
-          <div class="limit-item">Базова автоматизація</div>
         </td>
         <td>
           <div class="feat-item"><span class="check">✓</span> 15+ views</div>
@@ -182,12 +200,15 @@
           <div class="tool-sub">plane.so</div>
           <div style="margin-top:6px"><span class="badge b-tag">Open source</span> <span class="badge b-tag">Agile</span></div>
         </td>
-        <td><span class="badge b-free">✓ Є (cloud + self-host)</span></td>
+        <td>
+          <span class="badge b-free">✓ Є</span>
+          <div class="limit-item">Cloud: до 12 користувачів</div>
+          <div class="limit-item">Self-host: безлімітно</div>
+        </td>
         <td class="price">~$6 / user / mo</td>
         <td style="font-size:12px; color:var(--color-text-secondary);">IT-команди, self-hosted</td>
         <td>
-          <div class="limit-item">Cloud free: до 12 користувачів</div>
-          <div class="limit-item">Self-host — безлімітно (Community)</div>
+          <div class="limit-item">Менше інтеграцій у free</div>
         </td>
         <td>
           <div class="feat-item"><span class="check">✓</span> Issues + cycles</div>
@@ -202,16 +223,19 @@
           <div class="tool-sub">gitlab.com</div>
           <div style="margin-top:6px"><span class="badge b-tag">Open source</span> <span class="badge b-tag">Kanban</span></div>
         </td>
-        <td><span class="badge b-free">✓ Є</span></td>
+        <td>
+          <span class="badge b-free">✓ Є</span>
+          <div class="limit-item">необмежено issues</div>
+          <div class="limit-item">10 GB storage</div>
+        </td>
         <td class="price">~$29 / user / mo (Premium)</td>
         <td style="font-size:12px; color:var(--color-text-secondary);">Dev-команди з кодом</td>
         <td>
-          <div class="limit-item">10 GB storage</div>
           <div class="limit-item">400 CI/CD хвилин/міс</div>
         </td>
         <td>
           <div class="feat-item"><span class="check">✓</span> CI/CD нативно</div>
-          <div class="feat-item"><span class="check">✓</span> Milestones + MR-трекінг</div>
+          <div class="feat-item"><span class="check">✓</span> Milestones + MR</div>
           <div class="feat-item"><span class="part">~</span> Kanban базовий</div>
         </td>
       </tr>
@@ -222,12 +246,16 @@
           <div class="tool-sub">asana.com</div>
           <div style="margin-top:6px"><span class="badge b-tag">Agile</span> <span class="badge b-tag">Tasks</span></div>
         </td>
-        <td><span class="badge b-limit">~ Обмежено</span></td>
+        <td>
+          <span class="badge b-limit">~ Обмежено</span>
+          <div class="limit-item">до 2 користувачів</div>
+          <div class="limit-item">необмежено завдань</div>
+        </td>
         <td class="price">~$11 / user / mo</td>
         <td style="font-size:12px; color:var(--color-text-secondary);">Невеликі команди</td>
         <td>
-          <div class="limit-item">До 2 користувачів (Personal)</div>
           <div class="limit-item">Без Timeline / Gantt</div>
+          <div class="limit-item">Без custom fields</div>
         </td>
         <td>
           <div class="feat-item"><span class="check">✓</span> List / Board / Calendar</div>
@@ -239,14 +267,15 @@
   </table>
   </div>
 
+  <!-- Легенда -->
   <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 1.25rem; padding-top: 1rem; border-top: 0.5px solid var(--color-border-tertiary); font-size: 12px; color: var(--color-text-secondary);">
     <div><span class="badge b-free" style="margin:0">✓ Є</span> Повноцінний безкоштовний план</div>
-    <div><span class="badge b-limit" style="margin:0">~ Обмежено</span> Ліміт користувачів</div>
+    <div><span class="badge b-limit" style="margin:0">~ Обмежено</span> Обмежений план</div>
     <div><span class="check">✓</span> Є <span class="part">~</span> Частково <span class="cross">✗</span> Відсутнє</div>
   </div>
 </div>
 
-<div style="margin-top: 2rem;">
+<div style="margin-top: 2.5rem;">
   <h4>Кілька підказок для вибору:</h4>
   <ul>
     <li><strong>Для IT-команди з розробкою</strong> — Linear або Plane. Linear ідеальний для стартапів з невеликою командою, дуже швидкий і зручний для розробників. Plane — якщо хочеш self-hosted або open source без обмежень.</li>
